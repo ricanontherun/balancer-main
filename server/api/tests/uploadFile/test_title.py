@@ -1,8 +1,8 @@
 import unittest
 from unittest.mock import MagicMock, patch
 
-from ..views.uploadFile.title import generate_title
-from ..services.openai_services import openAIServices
+from server.api.views.uploadFile.title import generate_title
+from server.api.services.openai_services import openAIServices
 
 class TestGenerateTitle(unittest.TestCase):
   def test_prefers_metadata_title_if_valid(self):
